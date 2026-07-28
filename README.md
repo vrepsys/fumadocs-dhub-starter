@@ -10,7 +10,7 @@ A [Fumadocs](https://fumadocs.dev) starter template set up for [Dhub](https://dh
 2. Import the project into [Dhub](https://dhub.dev)
 3. Start editing with a visual editor
 
-The sidebar is driven by `navigation.json` in the project root. Dhub reads and writes this file, so you can rearrange navigation visually without editing config files. `lib/navigation.ts` converts it into a Fumadocs page tree at build time.
+The sidebar is driven by `navigation.json` in the project root. Dhub reads and writes this file, so you can rearrange navigation visually without editing config files. `lib/navigation.ts` converts it into a Fumadocs page tree at build time. Page paths in `navigation.json` are relative to the content directory (`content/docs`).
 
 ## What's inside
 

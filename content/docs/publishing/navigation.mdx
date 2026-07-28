@@ -26,13 +26,13 @@ You can also edit `navigation.json` directly:
 
 ```json title="navigation.json"
 {
-  "label": "Getting started",
+  "label": "Callouts",
   "type": "page",
-  "path": "content/docs/welcome.mdx"
+  "path": "editing/callouts.mdx"
 }
 ```
 
-Paths are relative to the repository root. Pages that don't resolve to a file are skipped with a warning at build time.
+Page paths are relative to the content directory (`content/docs`), the same convention Dhub uses when it writes the file. Pages that don't resolve to a file are skipped with a warning at build time.
 
 <Callout type="warn">
   Fumadocs requires every page URL to appear only once in the tree, so avoid listing the same file twice.

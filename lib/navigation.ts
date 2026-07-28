@@ -13,7 +13,9 @@ import { source } from './source';
  * Node types:
  * - tab:     top-level container; with several tabs, each becomes a
  *            root folder rendered as Layout Tabs by Fumadocs UI
- * - page:    links to an MDX file; "path" is relative to the repo root
+ * - page:    links to an MDX file; "path" is relative to the content
+ *            directory ("content/docs"), which is what Dhub writes.
+ *            Paths prefixed with the tab "path" are also accepted.
  * - folder:  collapsible group of nodes
  * - group:   non-collapsible group of nodes
  * - divider: separator line

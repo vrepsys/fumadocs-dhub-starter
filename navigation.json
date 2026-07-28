@@ -7,7 +7,7 @@
       {
         "label": "Welcome",
         "type": "page",
-        "path": "content/docs/welcome.mdx"
+        "path": "index.mdx"
       },
       {
         "label": "Editing",
@@ -16,32 +16,32 @@
           {
             "label": "Edit a page",
             "type": "page",
-            "path": "content/docs/editing/edit-a-page.mdx"
+            "path": "editing/edit-a-page.mdx"
           },
           {
             "label": "Callouts",
             "type": "page",
-            "path": "content/docs/editing/callouts.mdx"
+            "path": "editing/callouts.mdx"
           },
           {
             "label": "Tabs & accordions",
             "type": "page",
-            "path": "content/docs/editing/tabs-and-accordions.mdx"
+            "path": "editing/tabs-and-accordions.mdx"
           },
           {
             "label": "Code blocks & tables",
             "type": "page",
-            "path": "content/docs/editing/code-blocks-and-tables.mdx"
+            "path": "editing/code-blocks-and-tables.mdx"
           },
           {
             "label": "Images",
             "type": "page",
-            "path": "content/docs/editing/images.mdx"
+            "path": "editing/images.mdx"
           },
           {
             "label": "Custom components",
             "type": "page",
-            "path": "content/docs/editing/custom-components.mdx"
+            "path": "editing/custom-components.mdx"
           }
         ]
       },
@@ -52,17 +52,17 @@
           {
             "label": "Navigation",
             "type": "page",
-            "path": "content/docs/publishing/navigation.mdx"
+            "path": "publishing/navigation.mdx"
           },
           {
             "label": "Push & pull requests",
             "type": "page",
-            "path": "content/docs/publishing/push-and-pull-requests.mdx"
+            "path": "publishing/push-and-pull-requests.mdx"
           },
           {
             "label": "Deploy your site",
             "type": "page",
-            "path": "content/docs/publishing/deploy.mdx"
+            "path": "publishing/deploy.mdx"
           }
         ]
       },
@@ -72,7 +72,7 @@
       {
         "label": "Make it yours",
         "type": "page",
-        "path": "content/docs/make-it-yours.mdx"
+        "path": "make-it-yours.mdx"
       },
       {
         "label": "dhub.dev",
