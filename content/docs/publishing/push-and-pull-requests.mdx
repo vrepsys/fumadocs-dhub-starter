@@ -1,0 +1,30 @@
+---
+title: Push & pull requests
+description: How Dhub gets your edits back into GitHub.
+---
+
+Dhub keeps your project in sync with GitHub. When you're happy with your edits, push them back from the top-right menu.
+
+## Two ways to publish
+
+<Tabs items={["Push to branch", "Open a pull request"]}>
+  <Tab value="Push to branch">
+    Commits your changes straight to the branch you imported, ideal for solo projects and quick fixes.
+  </Tab>
+
+  <Tab value="Open a pull request">
+    Creates a branch with your changes and opens a pull request, so your team can review content changes like any other change.
+  </Tab>
+</Tabs>
+
+## What a push contains
+
+- Changed MDX files, serialized as idiomatic Fumadocs markup
+
+- `navigation.json`, if you rearranged the sidebar
+
+- Any images you uploaded, placed in `public/img`
+
+<Callout type="info">
+  Dhub only commits files that actually changed, so diffs stay small and reviewable.
+</Callout>

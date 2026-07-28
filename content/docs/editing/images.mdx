@@ -1,0 +1,36 @@
+---
+title: Images
+description: Adding images in Dhub, uploads, sizing, captions, and zoom.
+---
+
+Type `/image` to insert a full-width image block, then upload a file from your computer. Uploaded images land in your repo's `public/img` folder, so they're versioned together with your content.
+
+Plain images are stored as standard Markdown, and Fumadocs optimizes them automatically:
+
+![The Dhub editor](/img/dhub.png)
+
+Click any image on this site to zoom in. The starter enables the Fumadocs `ImageZoom` component for all Markdown images.
+
+## Sizing and captions
+
+Resize an image in Dhub and it becomes a plain `img` tag with explicit dimensions:
+
+<img src="/img/dhub.png" alt="The Dhub editor, resized" width="480" />
+
+Images can also have captions and alignment:
+
+<figure data-align="center">
+  <img src="/img/dhub.png" alt="The Dhub editor" width="480" />
+
+  <figcaption>
+    An image block with a caption
+  </figcaption>
+</figure>
+
+## Inline images
+
+For small images that sit inside a line of text, like icons or badges, use `/inline image` instead. Inline images also work inside table cells.
+
+<Callout type="idea" title="Try it">
+  Insert an image block below with `/image` and upload any picture from your computer.
+</Callout>

@@ -1,0 +1,39 @@
+---
+title: Navigation
+description: How the sidebar is driven by navigation.json and edited visually in Dhub.
+---
+
+The sidebar of this site is defined in a single file: `navigation.json` in the project root. Dhub reads and writes this file, so you can rearrange navigation visually, drag pages around, create folders and tabs, without touching code.
+
+## How it works
+
+`lib/navigation.ts` converts `navigation.json` into a Fumadocs page tree at build time and passes it to the docs layout. Page URLs are resolved through the Fumadocs source loader, so links always match the real routes.
+
+## Node types
+
+| Type      | Renders as                                 |
+| --------- | ------------------------------------------ |
+| `tab`     | a sidebar; several tabs become Layout Tabs |
+| `page`    | a link to an MDX file                      |
+| `folder`  | a collapsible section                      |
+| `group`   | an always-open section                     |
+| `divider` | a separator line                           |
+| `link`    | an external link                           |
+
+## Editing by hand
+
+You can also edit `navigation.json` directly:
+
+```json title="navigation.json"
+{
+  "label": "Getting started",
+  "type": "page",
+  "path": "content/docs/welcome.mdx"
+}
+```
+
+Paths are relative to the repository root. Pages that don't resolve to a file are skipped with a warning at build time.
+
+<Callout type="warn">
+  Fumadocs requires every page URL to appear only once in the tree, so avoid listing the same file twice.
+</Callout>

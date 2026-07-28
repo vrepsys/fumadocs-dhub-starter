@@ -1,0 +1,50 @@
+---
+title: Code blocks & tables
+description: Code blocks with syntax highlighting, titles and line numbers, and tables, edited visually in Dhub.
+---
+
+## Code blocks
+
+Type `/code` to insert a code block, or start a line with three backticks. Pick the language for syntax highlighting, and optionally give the block a title:
+
+```ts title="lib/source.ts"
+import { docs } from '@/.source';
+import { loader } from 'fumadocs-core/source';
+
+export const source = loader({
+  baseUrl: '/docs',
+  source: docs.toFumadocsSource(),
+});
+```
+
+Fumadocs also supports line numbers:
+
+```ts lineNumbers
+const config = {
+  title: 'My Docs',
+  tagline: 'Documentation that stays in sync',
+};
+```
+
+Code blocks support dozens of languages out of the box:
+
+```python
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+```
+
+## Tables
+
+Type `/table` to insert a table. Add and remove rows and columns from the controls that appear when your cursor is inside the table, no more counting pipes in Markdown.
+
+| Block     | Slash command | Stored in your repo as   |
+| --------- | ------------- | ------------------------ |
+| Callout   | `/callout`    | `<Callout>` component    |
+| Tabs      | `/tabs`       | `<Tabs>` component       |
+| Accordion | `/toggle`     | `<Accordions>` component |
+
+Inside a table cell, the `/` menu is limited to inline blocks. Regular text, inline images, and links work best there.
+
+<Callout type="idea" title="Try it">
+  Add a row to the table above, or insert a code block below and switch its language.
+</Callout>

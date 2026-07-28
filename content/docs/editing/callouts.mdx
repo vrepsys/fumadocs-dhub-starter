@@ -1,0 +1,42 @@
+---
+title: Callouts
+description: Fumadocs callouts in Dhub, with types and optional custom titles.
+---
+
+Callouts highlight information that shouldn't blend into the surrounding text. Type `/callout` to insert one, then use the dropdown on the block to switch its type.
+
+In your repo, callouts are stored as the standard Fumadocs `<Callout>` component, so they render the same everywhere.
+
+## The five types
+
+<Callout type="info">
+  Neutral supporting information, like context that's good to know but safe to skip.
+</Callout>
+
+<Callout type="idea">
+  A shortcut or best practice. Use it to point out the easy way to do something.
+</Callout>
+
+<Callout type="warn">
+  Something that can go wrong. Use warnings before steps people commonly get wrong.
+</Callout>
+
+<Callout type="error">
+  Destructive or irreversible actions. Reserve this one for when it really matters.
+</Callout>
+
+<Callout type="success">
+  Confirmation that things worked, like a completed setup or a passing check.
+</Callout>
+
+## Custom titles
+
+A callout can have its own title instead of the default label:
+
+<Callout type="idea" title="You can rename me">
+  Click the title of this callout in Dhub and type your own.
+</Callout>
+
+<Callout type="idea" title="Try it">
+  Insert a callout below with `/callout`, then switch its type using the dropdown on the block.
+</Callout>

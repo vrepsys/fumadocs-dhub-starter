@@ -1,0 +1,47 @@
+---
+title: Tabs & accordions
+description: Tabs and collapsible accordions in Dhub, great for per-platform instructions and optional detail.
+---
+
+## Tabs
+
+Tabs are ideal when the same task differs by platform, language, or package manager. Type `/tabs` to insert a tab group, then click a tab's label to rename it.
+
+<Tabs items={["npm", "yarn", "pnpm"]}>
+  <Tab value="npm">
+    ```bash
+    npm install
+    npm run dev
+    ```
+  </Tab>
+
+  <Tab value="yarn">
+    ```bash
+    yarn
+    yarn dev
+    ```
+  </Tab>
+
+  <Tab value="pnpm">
+    ```bash
+    pnpm install
+    pnpm dev
+    ```
+  </Tab>
+</Tabs>
+
+In your repo, tabs are stored as the Fumadocs `<Tabs>` and `<Tab>` components, nothing Dhub-specific.
+
+## Accordions
+
+An accordion hides detail behind a click. Use it for long asides, troubleshooting steps, or anything most readers don't need. Type `/toggle` to insert one.
+
+<Accordions type="single">
+  <Accordion title="What happens in the repo?">
+    Accordions are saved as the Fumadocs `<Accordions>` and `<Accordion>` components, which the theme styles and animates out of the box.
+  </Accordion>
+</Accordions>
+
+<Callout type="idea" title="Try it">
+  Rename a tab above, add another item to the group, or insert a fresh accordion with `/toggle`.
+</Callout>

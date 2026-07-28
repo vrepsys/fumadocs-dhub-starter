@@ -1,0 +1,41 @@
+---
+title: Custom components
+description: Using Fumadocs components and raw MDX in Dhub with the embedded MDX block.
+---
+
+Fumadocs pages are MDX, so they can embed React components. Dhub supports this with the **embedded MDX block**: type `/mdx` to insert one and write JSX directly.
+
+Here's an embedded MDX block using the Fumadocs `Cards` component:
+
+<Cards>
+  <Card
+    title="Fumadocs component library"
+    href="https://fumadocs.dev/docs/ui/components"
+  >
+    Cards, Steps, Files, and more, ready to use in any page.
+  </Card>
+</Cards>
+
+## Your existing components are safe
+
+If your pages already use custom components, Dhub won't get in the way. Any component it doesn't recognize is shown as an MDX block in the editor and written back to the file **exactly as it was**. You can keep editing the rest of the page visually.
+
+## When to reach for MDX
+
+- Fumadocs components without a dedicated block yet, like `Cards`, `Steps`, or `Files`
+
+- Reusing a React component registered in `mdx-components.tsx`
+
+- Anything else Markdown can't express
+
+For everyday content, like callouts, tabs, tables, and images, the built-in blocks are faster and render fully inside the editor.
+
+<Callout type="idea" title="Try it">
+  Type `/mdx` below and paste this:
+
+  ```mdx
+  <Cards>
+    <Card title="Hello from JSX" href="https://dhub.dev" />
+  </Cards>
+  ```
+</Callout>
