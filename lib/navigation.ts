@@ -12,10 +12,15 @@ import { source } from './source';
  *
  * Node types:
  * - tab:     top-level container; with several tabs, each becomes a
- *            root folder rendered as Layout Tabs by Fumadocs UI
+ *            root folder rendered as Layout Tabs by Fumadocs UI.
+ *            The tab "path" is the collection folder under the content
+ *            directory ("docs" for files in "content/docs").
  * - page:    links to an MDX file; "path" is relative to the content
- *            directory ("content/docs"), which is what Dhub writes.
- *            Paths prefixed with the tab "path" are also accepted.
+ *            directory ("content"), which is what Dhub writes, so it
+ *            mirrors the page URL ("docs/editing/images.mdx" is served
+ *            at /docs/editing/images). The tab "path" prefix is
+ *            stripped when matching, so collection-relative paths
+ *            ("editing/images.mdx") are also accepted.
  * - folder:  collapsible group of nodes
  * - group:   non-collapsible group of nodes
  * - divider: separator line
