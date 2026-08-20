@@ -8,26 +8,30 @@ description: Tabs and collapsible accordions in Dhub, great for per-platform ins
 Tabs are ideal when the same task differs by platform, language, or package manager. Type `/tabs` to insert a tab group, then click a tab's label to rename it.
 
 <Tabs items={["npm", "yarn", "pnpm"]}>
-  <Tab value="npm">
-    ```bash
-    npm install
-    npm run dev
-    ```
-  </Tab>
+<Tab value="npm">
 
-  <Tab value="yarn">
-    ```bash
-    yarn
-    yarn dev
-    ```
-  </Tab>
+```bash
+npm install
+npm run dev
+```
 
-  <Tab value="pnpm">
-    ```bash
-    pnpm install
-    pnpm dev
-    ```
-  </Tab>
+</Tab>
+<Tab value="yarn">
+
+```bash
+yarn
+yarn dev
+```
+
+</Tab>
+<Tab value="pnpm">
+
+```bash
+pnpm install
+pnpm dev
+```
+
+</Tab>
 </Tabs>
 
 In your repo, tabs are stored as the Fumadocs `<Tabs>` and `<Tab>` components, nothing Dhub-specific.
