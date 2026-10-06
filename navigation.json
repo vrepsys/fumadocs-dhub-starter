@@ -29,6 +29,11 @@
             "path": "docs/editing/tabs-and-accordions.mdx"
           },
           {
+            "label": "Steps",
+            "type": "page",
+            "path": "docs/editing/steps.mdx"
+          },
+          {
             "label": "Code blocks & tables",
             "type": "page",
             "path": "docs/editing/code-blocks-and-tables.mdx"
