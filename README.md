@@ -18,7 +18,7 @@ The sample docs double as a hands-on tour of Dhub:
 
 - **Editing**: the editor basics, plus live examples of callouts, tabs & accordions, steps, code blocks, tables, images, and custom MDX components
 - **Publishing**: how navigation works, pushing to main vs. opening pull requests, and deploying
-- **Make it yours**: a checklist for turning the template into your own site
+- **Make it yours**: the steps for turning the template into your own site
 
 Everything is standard Fumadocs: content lives in `content/docs` as MDX, components are registered in `mdx-components.tsx`, and the app is a regular Next.js project.
 
